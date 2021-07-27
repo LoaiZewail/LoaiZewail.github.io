@@ -603,7 +603,7 @@
         height: 1800px;
         position: fixed;
     }
-    ul li:nth-child(6n+1) a:before
+    /* ul li:nth-child(6n+1) a:before
     {
         background: var(--menu1);
     }
@@ -618,7 +618,7 @@
     ul li:nth-child(6n+4) a:before
     {
         background: var(--menu4);
-    }
+    } */
     /* Menu end */
     
     /* About start */
@@ -772,56 +772,11 @@
         padding: 20px 50px;
         z-index: 30;
     }
-    header label i{
-        z-index: 40;
-        margin: 16px;
-        color: white;
-    }
     .menu{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
         padding: 100px 5px;
-        text-align: center;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background: var(--background-theme);
-        clip-path: circle(25px at calc(100% - 45px) 45px);
-        transition: all 0.3s ease-in-out;
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-    }
-    #active:checked ~ .menu{
-        clip-path: circle(75%);
-    }
-    .menu-btn{
-        position: absolute;
-        z-index: 20;
-        right: 20px;
-        top: 20px;
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        line-height: 50px;
-        border-radius: 50%;
-        font-size: 20px;
-        color: var(--text);
-        cursor: pointer;
-        background: transparent;
-        transition: all 0.3s ease-in-out;
-        display: flex;
-    }
-    #active:checked ~ .menu-btn{
-        color: var(--text);
-    }
-    #active:checked ~ .menu-btn i:before{
-        content: "\f00d";
     }
     section{
-        padding: 100px 50px;
+        padding: 100px 30px;
     }
     .banner{
         padding: 150px 50px 100px;
@@ -844,76 +799,6 @@
     .work .content .workBx{
         width: 100%;
         padding: 10px;
-    }
-    ul
-    {
-        position: relative;
-    }
-    ul li
-    {
-        list-style: none;
-        text-align: center;
-    }
-    ul li a
-    {
-        color: white;
-        text-decoration: none;
-        font-size: 3em;
-        padding: 5px 20px;
-        display: inline-flex;
-        font-weight: 700;
-        transition: 0.5s;
-    }
-    ul li:hover a
-    {
-        color: #000;
-        background: rgba(255,255,255,1);
-    }
-    ul li a:before
-    {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 40%;
-        transform: translate(-50%,-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3em;
-        color: rgba(0,0,0,.1);
-        border-radius: 50%;
-        z-index: -1;
-        opacity: 0;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 500px;
-        transition: letter-spacing 0.5s,left 0.5s;
-    }
-    ul li a:hover:before
-    {
-        content: attr(data-text);
-        opacity: 1;
-        left: 50%;
-        letter-spacing: 10px;   
-        width: 1800px;
-        height: 1800px;
-        position: fixed;
-    }
-    ul li:nth-child(6n+1) a:before
-    {
-        background: var(--menu1);
-    }
-    ul li:nth-child(6n+2) a:before
-    {
-        background: var(--menu2);
-    }
-    ul li:nth-child(6n+3) a:before
-    {
-        background: var(--menu3);
-    }
-    ul li:nth-child(6n+4) a:before
-    {
-        background: var(--menu4);
     }
     .work .carsp{
         padding: 0px;
