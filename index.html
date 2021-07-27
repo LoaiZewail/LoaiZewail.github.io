@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icon.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="./js/jquery.particleground.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae21e5322c.js" crossorigin="anonymous"></script>
+
+    <title>Loai Zewail</title>
+</head>
+<body>
+
+    <!-- Preloader starts -->
+    <div id="particles">
+        <div id="intro">
+            <h1>Hello, is it me you're looking for ?</h1>
+            <a onclick="startbrowsing();" class="custom-btn btn-4"><span>Enter !</span></a>
+        </div>
+    </div>
+    <!-- Preloader ends -->
+
+    <div class="mainWebsite">
+    <!-- Progressbar starts -->
+    <div id="progressbar"></div>
+    <div id="whitebar"></div>
+    <div id="scrollpath"></div>
+    <!-- Progressbar ends -->
+
+    <!-- Menu starts -->
+    <header>
+        <input type="checkbox" class="menuforjs" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();" data-text="Home">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();" data-text="About me">About me</a></li>
+            <!-- <li><a href="#work" onclick="toggleMenu();" data-text="Projects">Projects</a></li> -->
+            <li><a href="#contact" onclick="toggleMenu();" data-text="Get in touch">Get in touch</a></li>
+        </ul>
+    </header>
+    <!-- Menu ends -->
+
+    <!-- Home starts -->
+    <section class="banner" id="home">
+        <!-- Circles -->
+        <div class="crcc"></div>
+        <!-- Text box -->
+        <div class="textBx">
+            <!-- Plain text -->
+            <h2>Hello, I'm <br><span>Loai Zewail</span></h2>
+            <h3>I'm a Front-End And Cross-Platfom Mobile Developer</h3>
+            <!-- Animation text -->
+            <div class="animtxt">
+            <p class="line-1 anim-typewriter">I enjoy creating pretty things using pretty code.</p>
+            </div>
+            <!-- Button -->
+            <a href="#contact" class="custom-btn btn-4"><span>Hire Me !</span></a>
+        </div>
+        <!-- Contact list -->
+        <dl class="sci">
+            <li><a href="https://www.linkedin.com/in/loaizewail/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/LoaiZewail" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/LoaiZewail" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        </dl>
+        <!-- Mood -->
+        <div class="mood">
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        </div>
+    </section>
+    <!-- Home ends -->
+
+    <!-- About starts -->
+    <section class="meabout" id="about">
+        <!-- Heading -->
+        <div>
+            <h2 class="heading-3">About me</h2>
+        </div>
+        <!-- Data -->
+        <div class="content">
+            <div class="oned">
+                <h1 class="txt"><span class="boldy">Age: <br></span><span class="innertxt"> 26 </span></h1>
+                
+                <h1 class="txt"><span class="boldy">Email: <br></span><span class="innertxt"> loaizewail@gmail.com</span></h1>
+                
+                <h1 class="txt"><span class="boldy">Phone: <br></span><span class="innertxt"> +2 01113302430</span></h1>
+                
+            </div>
+            <div class="twod">
+                <h1 class="txt"><span class="boldy">Education: <br></span><span class="innertxt"> ITI , BSc Civil Engineering </span></h1>
+                
+                <h1 class="txt"><span class="boldy">Nationality: <br></span><span class="innertxt"> Egyptian</span></h1>
+                
+                <h1 class="txt"><span class="boldy">Residence: <br></span><span class="innertxt"> Alexandria, Egypt</span></h1>
+                
+            </div>
+        </div>
+        <!-- Skills -->
+        <div class="services" id="services">
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="./assets/icon1.png">
+                    <h2>Programming Languages</h2>
+                    <p>C - C++ - Javascript - Typescript - Dart</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./assets/icon2.png">
+                    <h2>Front-End</h2>
+                    <p>HTML5 - CSS3 - SASS - Bootstrap - Js.Next - jQuery - ECMA6 - React - Angular</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./assets/icon3.png">
+                    <h2>Back-End</h2>
+                    <p>RESTful API - Node.js - Express</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./assets/icon4.png" class="scld">
+                    <h2>Mobile Cross-Platform</h2>
+                    <p>Flutter - React-Native</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./assets/icon5.png">
+                    <h2>Database</h2>
+                    <p>MySQL - Firebase</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="./assets/icon6.png">
+                    <h2>Other</h2>
+                    <p>Object Oriented Programming - Adobe XD - Photoshop - Git</p>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="btnss btndwn">
+                <a href="./assets/Loai_Zewail_CV.pdf" class="custom-btn btn-4" target="_blank"><span>Download CV</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- About ends -->
+
+    <!-- Projects starts -->
+    <!-- <section class="work" id="work" > -->
+        <!-- Heading -->
+        <!-- <div>
+            <h2 class="heading-3">Projects</h2>
+        </div> -->
+        <!-- Carousel -->
+        <!-- <div class="carsp">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/product1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/product2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/product3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Code</a>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+    <!-- Projects ends -->
+
+    <!-- Contact starts -->
+    <section class="contact" id="contact">
+        <!-- Heading -->
+        <div>
+            <h2 class="heading-3">Get in touch</h2>
+        </div>
+        <!-- Contact -->
+        <div class="content">
+            <div class="emailbtn"><i class="fas fa-paper-plane"></i></div>
+            <a
+            href="mailto:loaizewail@gmail.com"
+            class="contact-box__link"
+            >
+            loaizewail@gmail.com
+            </a>
+        </div>
+    </section>
+    <!-- Contact ends -->
+
+    <!-- Copyrights starts -->
+    <div class="copyright">
+        <p>© 2021 by Loai Zewail.</p>
+    </div>
+    <!-- Copyrights ends -->
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
