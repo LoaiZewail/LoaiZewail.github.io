@@ -80,10 +80,10 @@
                 dotColor: '#fff',
                 lineColor: '#a9a9a9',
                 density: 9000,
-                minSpeedX: 0.9,
-                minSpeedY: 0.9,
-                maxSpeedX: 1,
-                maxSpeedY: 1,
+                minSpeedX: 0.4,
+                minSpeedY: 0.4,
+                maxSpeedX: 0.9,
+                maxSpeedY: 0.9,
                 lineWidth: 0.7,
                 particleRadius: 5
             });
