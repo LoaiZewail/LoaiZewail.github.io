@@ -845,7 +845,7 @@
         transform: scale(1.5);
     }
     .contact .content{
-        padding-top: 90px;
+        padding-top: 50%;
     }
 }
 @media (max-width: 320px) {
