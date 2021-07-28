@@ -731,6 +731,7 @@
     .contact{
         background: var(--background-dark);
         min-height: 100vh;
+        position: relative;
     }
     .contact .content
     {
@@ -739,7 +740,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 55px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(50%);
     }
     .emailbtn{
         color: var(--text);
@@ -843,9 +848,6 @@
     }
     .contact-box__link:hover {
         transform: scale(1.5);
-    }
-    .contact .content{
-        padding-top: 50%;
     }
 }
 @media (max-width: 320px) {
